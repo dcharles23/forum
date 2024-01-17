@@ -1,0 +1,33 @@
+{{define "header_logreg"}}
+    <!-- Main Page Header -->
+    <header class="headerHeader">
+        <!-- Header Logo Picture and Text-->
+        <div class="LogoContainer" style="height:60px;">
+           <a href="/" > <img class="Logo" src="/static/img/logo.webp" alt="01FC Logo" width="60px" height="50px"></a>
+            <p class="LogoText" style="color: white;">01Founders Crack</p>
+        </div>
+        <!-- Log In Button -->    
+        <!-- maybe no need 
+             <a class="headerLink" href="/login" >
+            <button class="LogInButton">Log In</button>
+        </a>
+        -->
+        <div class="HeaderButtons">
+        <!-- DropDown Menu-->
+        <div class="Dropdown">
+            <button class="DropdownBtn">...</button>
+            <div class="DropdownContent">
+                <a class="headerLink" href="/login" >
+                    <button class="DropdownItem">Log In / Sign Up</button>
+                </a>
+                <a class="headerLink" href="https://www.buymeacoffee.com/01founderscrack" target="_blank">
+                    <button class="DropdownItem">Donate</button>
+                </a>
+                <a class="headerLink" href="https://github.com/01founders-crack" target="_blank">
+                    <button class="DropdownItem">Github</button>
+                </a>
+            </div>
+        </div>
+        </div>
+    </header>
+    {{end}}

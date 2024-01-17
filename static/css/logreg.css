@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black; /* Change this to the background color from loginPage.css */
+}
+
+.container {
+  background-color: #303030;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  max-width: 600px; /* Change this to the max-width from your login container */
+  padding: 80px; /* Change this to the padding from your login container */
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  color: white;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+button {
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+}
+button:hover {
+  background-color: orangered;
+}
+
+.fa {
+  margin-right: 5px;
+}
+.Sign-Up {
+  text-align: center;
+  margin-top: 10px;
+}
+.Sign-Up a {
+  color: #ff4500;
+  text-decoration: none;
+}
+.Sign-Up a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+      max-width: 100%;
+      padding: 20px;
+      margin-top: 100px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  input[type="text"], input[type="password"] {
+      padding: 10px 15px;
+  }
+}

@@ -1,0 +1,19 @@
+{{define "content"}}
+<div class="container">
+  <h1>Log In</h1>
+  <form action="loginauth" role="form" method="POST">
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit"><i class="fa fa-sign-in"></i>Log In</button>
+
+    <div class="Sign-Up">
+      <a href="/register">New? Sign-Up Here!</a>
+    </div>
+  </form>
+</div>
+{{end}}
+

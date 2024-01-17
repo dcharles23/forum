@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.post-form {
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #303030;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-form h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.post-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.post-form input[type="text"],
+.post-form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* The submit button */
+.post-form input[type="submit"] {
+  background-color: orangered;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.post-form select {
+  background: black;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+.post-form select:hover {
+  background: black;
+}
+.notif {
+  color:white;
+  text-align: center;
+  border: 3px solid yellow;
+  padding: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .post-form input[type="text"],
+  .post-form textarea {
+    padding: 10px 15px;
+  }
+
+  .post-form input[type="submit"] {
+    padding: 12px 15px;
+  }
+}

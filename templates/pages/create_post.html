@@ -1,0 +1,23 @@
+{{define "content"}}
+<div class="post-form">
+    <h2>Create a Post</h2>
+    <form method="post" action="/create_post">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content"></textarea><br>
+        <label for="category">Categories:</label><br>
+        <select id="category" name="category" multiple>
+            {{range .Categories}}
+            <option value="{{.ID}}">{{.Name}}</option>
+            {{end}}
+        </select><br>        
+        <label for="img">Image:</label><br>
+        <input type="text" id="img" name="img" value="placeholder"><br>
+        <input type="submit" value="Submit">
+    </form>
+    {{if .SessionData.notification}}
+    <p class="notif">{{.SessionData.notification}}</p>
+{{end}}
+</div>
+{{end}}

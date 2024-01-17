@@ -1,0 +1,73 @@
+{{define "header_profile"}}
+    <div class="header">
+      <div class="left-section">
+        <div class="LogoContainer" style="height:60px;">
+          <a href="/"> <img class="Logo" src="/static/img/logo.webp" alt="01FC Logo" width="40px" height="40px"></a>
+          <p class="LogoText" >01Founders Crack</p>
+      </div>
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="/static/icons/search.webp">
+          <div class="tooltip">Search</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="chat-container">
+          <img class="chat-icon" src="/static/icons/chat.webp" alt="chat-icon" >
+          <div class="tooltip">chat</div>
+        </div>
+        <div class="fire-container">
+          <img class="fire-icon" src="/static/icons/fire.webp" alt="fire-icon">
+          <div class="tooltip">popular</div>
+        </div>
+        <div class="apps-container">
+          <img class="apps-icon" src="/static/icons/apps.webp" alt="apps-icon">
+          <div class="tooltip">apps</div>
+        </div>
+        <div class="notifications-container">
+          <img class="notifications-icon" src="/static/icons/notifications.webp" alt="notifications-icon">
+          <div class="tooltip">notifications</div>
+        </div>
+        <div class="create-container">
+        <a href="/create_post"><img class="create-icon" src="/static/icons/create.webp" alt="create-icon">
+          <div class="tooltip">create post</div>
+        </a>
+        </div>
+        <div class="advertise-container">
+          <img class="advertise-icon" src="/static/icons/advertise.webp" alt="advertise-icon">
+          <div class="tooltip">advertise</div>
+        </div>
+        <div class="pf-Dropdown">
+          <button class="pf-DropdownBtn">
+            <img class="current-user-picture" src="/static/img/Loki.webp" alt="user-pic">
+            <span class="material-symbols-outlined" style="color:gray">expand_more</span>
+          </button>
+          <div class="pf-DropdownContent">
+            <!--
+              <a class="headerLink" href="/login" >
+                  <button class="DropdownItem">Log In / Sign Up</button>
+              </a>
+            -->
+              <a class="headerLink" href="/logout" >
+                <button class="DropdownItem"><img class="logout-icon" src="/static/icons/logout.png" alt="logout-icon">Log Out</button>
+              </a>
+              <a class="headerLink" href="/user/loki" >
+                <button class="DropdownItem">Profile</button>
+            </a>
+              <a class="headerLink" href="https://www.buymeacoffee.com/01founderscrack" target="_blank">
+                  <button class="DropdownItem">Donate</button>
+              </a>
+              <a class="headerLink" href="https://github.com/01founders-crack" target="_blank">
+                  <button class="DropdownItem">Github</button>
+              </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+{{end}}
+    
+
+    

@@ -1,0 +1,24 @@
+{{define "content"}}
+<div class="container">
+  <h1>Sign Up</h1>
+  <form action="/registerauth" method="POST" role="form">
+
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    </div>
+
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    </div>
+    
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
+{{end}}

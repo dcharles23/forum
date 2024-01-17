@@ -1,0 +1,19 @@
+{{define "head"}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Forum made for 01Founders By 01Founders Crack">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Forum, Seyit, Said it, Said, Reddit, Facebook, Twitter, Community, Talk, Questions, Blog, Post">
+    <meta name="author" content="01FC">
+    <link rel="stylesheet" href="/static/css/header.css">
+    {{if .IsHomePage}}
+    <link rel="stylesheet" href="/static/css/homePage.css">
+    {{end}}
+    {{if .IsCreatePost}}
+        <link rel="stylesheet" href="/static/css/createPost.css">
+    {{end}}
+    {{if .IsEditPost}}
+        <link rel="stylesheet" href="/static/css/editPost.css">
+    {{end}}
+
+{{end}}

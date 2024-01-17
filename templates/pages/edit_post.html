@@ -1,0 +1,56 @@
+{{define "content"}}
+{{$Post := .Post}}
+   <!--maybe all form login signin post all use same class and color tone??-->
+<section class="container">
+    <div class="post-background">
+        <div class="post-shape"></div>
+        <div class="post-shape"></div>
+    </div>
+    <div class="form-container">
+        <img src="static/img/illustration.webp" alt="illustration" class="illustration" />
+        <form class="post-form" action="/post/edit" method="POST">
+            <h2 class="post-heading">Edit your post</h2>
+            <input type="number" name="id" value="{{ $Post.Id }}" hidden></input>
+            <!--not sure how this should be, I put two different types-->
+            <div class="choose-community-DropDown">
+                <button  id="choose-community-DropdownBtn" class="choose-community-DropdownBtn">
+                    choose a community
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+                </button>
+                <!--this part is not working...-->
+                <div class="DropdownContent">
+                    {{ range .Categories }}
+                    <button class="DropdownItem">{{ .Topics }}</button>
+                    <button class="DropdownItem">{{ .Topics }}</button>
+                   {{end}}
+                </div>
+            </div>
+            <!--End of this part is not working...-->
+            <select name="community" id="community">
+                <option value="category1">category1</option>
+                <option value="category2">category2</option>
+                <option value="category3">category3</option>
+                <option value="category4">category4</option>
+            </select>
+            <!--END of not sure how this should be-->
+            <div class="form-group">
+                <label>Title</label>
+                <input class="post-title" type="text" name="title" placeholder="Give your post a title"  value="{{ $Post.Title }}" required>
+                <label>Text</label>
+                <textarea class="post-textarea" id="textarea" name="content" placeholder="Tell people about your thoughts"></textarea>
+            </div>
+            <div id="post-btn">
+                <button class="btn-primary">
+                    <span class="material-symbols-outlined">
+                    upload
+                    </span>
+                    Image & Video
+                </button>
+                <button type="submit" class="btn-primary">Submit Post</button>
+            </div>
+        </form>
+    </div>
+</section>
+{{end}}

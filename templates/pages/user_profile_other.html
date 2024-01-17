@@ -1,0 +1,90 @@
+{{define "content"}}
+<div class="grid-page">
+  <nav class="navbar" id="myNavbar"> 
+      <a>OVERVIEW</a>
+      <a>POSTS</a>
+      <a>COMMENTS</a>
+      <a>HISTORY</a>
+      <a>SAVED</a>
+      <a>HIDDEN</a>
+      <a>UPVOTED</av>
+      <a>DOWNVOTED</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      
+  </nav>
+  <div class="middle-content">
+      <div class="post-container">
+        <!--sample posts-->
+          <div>post1</div>
+          <div>post2</div>
+          <div>post3</div>
+          <div>post4</div>
+          <div>post5</div>
+          <div>post6</div>
+          <div>post7</div>
+      </div>
+  </div>
+  <div class="right-content">
+    <div class="profile-card">
+        <div class="banner-img"></div>
+        <img class="profile-picture" src="/static/img/Darcy.webp" alt="user-pic">
+        <p class="title">Darcy</p>
+        <div class="joinDate-container">
+            <img class="calender-icon" src="/static/icons/calendar.webp" alt="calender">
+            <div class="JoinDate">Joined Fab 2000</div>
+        </div>
+        <div class="connect">
+          <div class="following"><span id="nb">100</span> following</div>
+          <div class="followers"><span id="nb">180</span> followers</div>
+        </div>
+        <div class="btns">
+          <a>
+            <button class="profile-btn">
+              Follow 
+            </button>
+          </a>
+         <a>
+          <button class="profile-btn">
+            Chat
+          </button>
+         </a>
+        </div>
+    </div>
+    
+      <div class="profile-card-mini">
+        <div class="pic-mini-container">
+            <img class="profile-picture-mini" src="/static/img/Darcy.webp" alt="user-pic">
+        </div>
+        <div class="profile-info-mini">
+            <p class="title-mini">Darcy</p>
+            <div class="joinDate-container-mini">
+                <img class="calender-icon" src="/static/icons/calendar.webp" alt="calender">
+                <div class="JoinDate">Joined Fab 2000</div>
+            </div>
+            <div class="connect-mini">
+                <div class="following"><span id="nb">100</span> following</div>
+                <div class="followers"><span id="nb">180</span> followers</div>
+            </div>
+        </div>
+        <div class="mini-right">
+            <a>
+              <button class="profile-btn-mini">
+                Follow 
+              </button>
+            </a>
+            <a>
+              <button class="profile-btn-mini">
+                Chat
+              </button>
+            </a>
+        </div>
+      </div>
+      
+      <div class="push-top">
+          <button class="back-to-top" onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+      </div>
+  </div>
+</div>
+<script src="/static/js/back-top.js"></script>
+<script src="/static/js/navbar_control.js"></script>
+{{end}}
